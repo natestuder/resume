@@ -32,6 +32,8 @@
 \usepackage{marvosym} % Allows the use of symbols
 \usepackage[english]{babel} % Required to compile in Windows
 
+\usepackage{hyperref}
+
 \setlength\parindent{0pt} % Removes all indentation from paragraphs
 
 \defaultfontfeatures{Mapping=tex-text}
@@ -44,12 +46,11 @@
 %  PERSONAL INFORMATION
 %----------------------------------------------------------------------------------------
 
-\setkomavar{fromname}{John Smith} % Your name
-\setkomavar{fromaddress}{123 Broadway\\City\\Country} % Your address
-\setkomavar{fromphone}{(000) 111-1111} % Your phone number
-\setkomavar{fromemail}{john@smith.com} % Your email address
+\setkomavar{fromname}{Nathan Studer}
+\setkomavar{fromaddress}{1051 Edna St. SE\\Grand Rapids\\USA}
+\setkomavar{fromphone}{+1 (616) 648-4491}
 \setkomavar{place}{} % City written before the date, put your city here if you want this
-\setkomavar{signature}{John Smith} % Your name as you want it to appear in the signature
+\setkomavar{signature}{Nathan Studer}
 
 % These are not used in this document, uncomment if you would like to use them and refer to them as \usekomavar{name}
 %\setkomavar{fromfax}{+1 (1)23 456789} % Your fax number
@@ -63,7 +64,7 @@
 \firsthead{
 \centering
 {\addfontfeature{LetterSpace=20.0}\fontsize{36}{36}\selectfont\scshape \usekomavar{fromname}}\\[5mm]
-\fontsize{21}{21}\selectfont\scshape Programmer at Initech } % Your current job title
+\fontsize{21}{21}\selectfont\scshape Software Architect at Delphi } % Your current job title
 
 %----------------------------------------------------------------------------------------
 %  FOOTER SECTION
@@ -76,7 +77,8 @@
 \renewcommand{\\}{\ {\large\textperiodcentered}\ }
 \usekomavar{fromaddress}
 }\\
-{\Large\Letter} \usekomavar{fromemail} \ {\Large\Telefon} \usekomavar{fromphone} % If you want your fax number or website URL showing, add it here; you may need to play around with spacing
+%Any other links???
+{\Large\Letter} \href{mailto:nate.studer@gmail.com}{nate.studer@gmail.com} \ {\Large\Telefon} \usekomavar{fromphone} % If you want your fax number or website URL showing, add it here; you may need to play around with spacing
 }
 
 %----------------------------------------------------------------------------------------
@@ -95,7 +97,7 @@ HR Dept. --- Corporation\\
 
 \setkomavar{subject}{Cover Letter} % This is the bold text saying 'Cover Letter', remove it if you don't like it
 
-\opening{Dear Recruiter,}
+\opening{To Whom it May Concern,}
 
 PARAGRAPH ONE: State the reason for the letter, name the position or type of work you are applying for and identify the source from which you learned of the opening.\\
 
