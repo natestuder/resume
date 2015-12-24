@@ -152,6 +152,13 @@
     {\footnotesize\addfontfeature{Color=lightgray} #3}\\%
     #4\vspace{\parsep}%
   }\\}
+\newcommand{\nodateentry}[3]{%
+  \parbox[t]{11.8cm}{%
+    \textbf{#1}%
+    \hfill%
+    {\footnotesize\addfontfeature{Color=lightgray} #2}\\%
+    #3\vspace{\parsep}%
+  }\\}
 
 
 %%%%%%%%%%%%%%
