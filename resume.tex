@@ -205,10 +205,14 @@ Completed master degree program while working full time at this position.
 
 \end{entrylist}
 
+\let\oldclearpage\clearpage
+\renewcommand{\clearpage}{}
+\newgeometry{left=1.5cm}
+\let\clearpage\oldclearpage
 
 \begin{entrylist}
 
-\entry
+\longentry
 {2004--2006}
 {Smiths Industries Aerospace}
 {Grand Rapids, Michigan}
@@ -233,7 +237,7 @@ Completed undergraduate degree program while working part time at this position.
 \section{Patents}
 
 \begin{entrylist}
-\entry
+\longentry
 {2014}
 {\emph{System and Method for Deterministic Time Partitioning of Asynchronous Tasks in a Computing Environment.} (Provisional)}
 {VanderLeest, Steven and Studer, Nathan.}
@@ -243,7 +247,7 @@ Completed undergraduate degree program while working part time at this position.
 \section{Conference Presentations}
 
 \begin{entrylist}
-\entry
+\longentry
 {2014}
 {\emph{Xen and the Art of Certification}}
 {Xen Developer Summit}

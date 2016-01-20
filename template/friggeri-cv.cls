@@ -152,8 +152,15 @@
     {\footnotesize\addfontfeature{Color=lightgray} #3}\\%
     #4\vspace{\parsep}%
   }\\}
+\newcommand{\longentry}[4]{%
+  #1&\parbox[t]{14.5cm}{%
+    \textbf{#2}%
+    \hfill%
+    {\footnotesize\addfontfeature{Color=lightgray} #3}\\%
+    #4\vspace{\parsep}%
+  }\\}
 \newcommand{\nodateentry}[3]{%
-  \parbox[t]{11.8cm}{%
+  \parbox[t]{16.8cm}{%
     \textbf{#1}%
     \hfill%
     {\footnotesize\addfontfeature{Color=lightgray} #2}\\%
