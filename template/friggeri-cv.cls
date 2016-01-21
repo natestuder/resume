@@ -166,6 +166,10 @@
     {\footnotesize\addfontfeature{Color=lightgray} #2}\\%
     #3\vspace{\parsep}%
   }\\}
+\newcommand{\listentry}[1]{%
+  \parbox[t]{16.8cm}{%
+    #1\vspace{\parsep}%
+  }\\}
 
 
 %%%%%%%%%%%%%%
