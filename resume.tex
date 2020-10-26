@@ -44,11 +44,11 @@ USA
 English:  Native Language
 German:  Elementary Proficiency (ILR Level 1)
 \section{Programming Languages}
-C, C++, C\#, Ada, VHDL, Verilog, python, PPC Assembly, ARM Assembly, Shell Scripting, Javascript, HTML5, CSS
+C, C++, C\#, Ada, VHDL, Verilog, python, RISC-V Assembly, PPC Assembly, ARM Assembly, Shell Scripting, Javascript, HTML5, CSS
 \section{Operating Systems}
 Unix, Linux, VxWorks, VxWorks 653, Windows, Xen, seL4, RTEMS, FreeRTOS, NuttX
 \section{Architectures}
-PPC, ARM, FPGA SoC (Xilinx Zynq, Actel SmartFusion2)
+RISC-V, PPC, ARM, FPGA SoC (Xilinx Zynq, Actel SmartFusion2)
 \section{IDEs}
 Microsoft Visual Studio, Eclipse, Android Studio, Freescale Codewarrior, TI CodeComposer, VxWorks Workbench, Xilinx ISE, Xilinx Vivado, Altera Quartus, Actel Libero.
 \end{aside}
@@ -84,17 +84,20 @@ Time Linux Kernel for entry in the International Ground Vehicle Competition (IGV
 {DornerWorks}
 {Grand Rapids, Michigan}
 {\emph{Senior Engineer} \\
-Senior Engineer at an engineering services firm with a primary focus on hypervisor and FPGA based systems.
+Senior Engineer at an engineering services firm with a primary focus on seL4 as a secure hypervisor and FPGA based systems.
 \begin{itemize}
 \item Obtained Secret clearance.
 \item Developed cooperative paravirtual driver for Xilinx AXI DMA Engine.
 \item Ported Xen to i.MX8.
-\item Developed and presented hypervisor training and marketing material.
-\item Architected and implemented the software architecture for a seL4 based augmented reality helmet system.
-\item Implemented ARM SMMU support for seL4.
-\item Subcontractor PI on DARPA SSITH under Draper.
 \item Converted internal Linux build system to Yocto.
 \item Maintained Xen based distribution for Xilinx's Zynq UltraScale and NXP's i.MX8.
+\item Developed and presented hypervisor training and marketing material for both Xen and seL4.
+\item Architected and implemented the software architecture for a seL4 based augmented reality helmet system.
+\item Implemented ARM SMMUv2 driver for seL4.
+\item Subcontractor PI on DARPA SSITH under Draper, porting software and tooling to a cutting edge secure processor using RISC-V.
+\item Performed research into portable heterogenous computing (CPU, GPU, and FPGA) solutions.
+\item Designed the FPGA system for a Secure Communications device, providing secure external network and storage access to a host PC over USB.
+
 \end{itemize}}
 
 \end{entrylist}
@@ -134,7 +137,7 @@ Ubuntu, Debian, buildroot, Yocto
 \section{Requirements Management}
 Doors
 \section{FPGA Simulation and Synthesis}
-Mentor Graphics ModelSim, Mentor Graphics Precision, Synplify.
+QuartusPro, Vivado, Vitis, Mentor Graphics ModelSim, Mentor Graphics Precision, Synplify.
 \section{Other}
 WindChill, gcc, LaTeX, make, Microsoft Office.
 \section{Protocols}
@@ -145,8 +148,6 @@ SDRAM, DRAM, FLASH, SRAM, LCD, GPS, BT656.
 SPI, I2C, EEPROM, FLASH, Ethernet, SMBus, PWM, HDLC, RS-232, RS-422, RS-485, PCI, DMA, VME.
 \section{Professional Interests}
 Hardware Emulation, Virtualization, Computer Vision, Open Source Software/Hardware, Functional Programming, Logic Programming, Artificial Intelligence, Machine Learning.
-\section{Personal Interests}
-Soccer, Weight-Lifting
 \end{aside2}
 
 \begin{entrylist}
@@ -290,6 +291,17 @@ Completed undergraduate degree program while working part time at this position.
 {\emph{System and Method for Deterministic Time Partitioning of Asynchronous Tasks in a Computing Environment.} (Provisional)}
 {VanderLeest, Steven and Studer, Nathan.}
 {Patent desribing a scheduling algorithm that maintains deterministic allocation of time with interrupts.}
+\end{entrylist}
+
+\section{Webinars}
+
+\begin{entrylist}
+\longentry
+{2020}
+{\emph{Enabling Device Security with a Formally Verified Microkernel}}
+{MicroChip Shields Up! Webinar Series}
+{Overview presentation of microkernels and formal verification used by seL4 to provide a
+secure base system running on the PolarFire SoC.}
 \end{entrylist}
 
 \section{Conference Presentations}
